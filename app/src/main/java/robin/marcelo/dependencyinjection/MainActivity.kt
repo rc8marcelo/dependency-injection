@@ -19,28 +19,28 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun callBadCode() {
-        val myLappy = Laptop()
-        myLappy.powerSource = DirectPower()
-        myLappy.useLaptop()
-        myLappy.useLaptop()
-        myLappy.useLaptop()
-        myLappy.turnOff()
+        val myMacBookPro = Laptop()
+        myMacBookPro.powerSource = DirectPower()
+        myMacBookPro.useLaptop()
+        myMacBookPro.useLaptop()
+        myMacBookPro.useLaptop()
+        myMacBookPro.turnOff()
 
-        val myOtherLappy = Laptop()
-        myOtherLappy.powerSource = BatteryPower(10.0)
-        myOtherLappy.turnOn()
-        myOtherLappy.useLaptop()
-        myOtherLappy.useLaptop()
-        myOtherLappy.turnOff()
+        val myAsusLappy = Laptop()
+        myAsusLappy.powerSource = BatteryPower(10.0)
+        myAsusLappy.turnOn()
+        myAsusLappy.useLaptop()
+        myAsusLappy.useLaptop()
+        myAsusLappy.turnOff()
     }
 
     private fun callGoodCode() {
         //Should normally be inside onCreate but is placed here instead for brevity
         val powerSource = JBatteryPower(10.0)
-        val myLappy = JLaptop(powerSource)
-        myLappy.turnOn()
-        myLappy.useLaptop()
-        myLappy.useLaptop()
-        myLappy.turnOff()
+        val myMacBookPro = JLaptop(powerSource)
+        myMacBookPro.turnOn()
+        myMacBookPro.useLaptop()
+        myMacBookPro.useLaptop()
+        myMacBookPro.turnOff()
     }
 }
